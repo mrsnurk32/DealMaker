@@ -1,0 +1,27 @@
+{% extends 'mainApp/wrapper.html' %}
+{% load bootstrap %}
+
+{% block head %}
+{% include "mainApp/includes/style.css" %}
+{% endblock %}
+
+{% block content %}
+<table>
+  <tr>
+    <td>
+      <div class="container"><h2>Договор</h2></div>
+    </td>
+  <tr>
+</table>
+<br>
+
+<form method="post">
+
+  {% csrf_token %}
+  {{ form|bootstrap }}
+  <button class="btn btn-light" type="submit">Submit</button>
+  <a class="btn btn-light" href="http://127.0.0.1:8000/" role="button">Домой</a>
+</form>
+
+<h1>{{ text }}</h1>
+{% endblock %}
