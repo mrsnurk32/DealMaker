@@ -1,0 +1,27 @@
+<style>
+body{
+  background: #cccccc;
+}
+.navbar-default {
+    background-color: #f2f2f2;
+    border-radius: 25px;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul{
+  margin: 0;
+  list-style:none;
+}
+table{
+   margin:auto;
+   width:100%;
+   background-color: #f2f2f2;
+   border-radius: 25px;
+}
+
+</style>

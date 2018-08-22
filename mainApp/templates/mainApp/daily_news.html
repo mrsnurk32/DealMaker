@@ -1,0 +1,28 @@
+
+{% extends 'mainApp/wrapper.html' %}
+{% block head %}
+{% include "mainApp/includes/style.css"%}
+{% endblock %}
+
+{% block content %}
+<table>
+  <tr>
+    <td>
+      <div class="container"><h2> Меню: </h2></div>
+    </td>
+  <tr>
+</table>
+<br>
+{% include "mainApp/includes/btndaynews.html" %}
+<br>
+<table>
+  <tr>
+    <td>
+      <div class="container">{% include "news/includes/daily_news_include.html" %}<div>
+    </td>
+  <tr>
+</table>
+<br>
+{% include "mainApp/includes/btnnews.html" %}
+{% include "mainApp/includes/btndeal.html" %}
+{% endblock %}

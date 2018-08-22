@@ -1,0 +1,15 @@
+
+{% extends 'mainApp/wrapper.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+{% include "mainApp/includes/btndaynews.html" %}
+{% for key, value in values.items %}
+    <li>{{key}}:{{value}}</li>
+{% endfor %}
+</ul>
+{% include "mainApp/includes/btnnews.html" %}
+{% include "mainApp/includes/btndeal.html" %}
+{% endblock %}
